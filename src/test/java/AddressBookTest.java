@@ -14,6 +14,9 @@ public class AddressBookTest {
                 "93456482012",
                 "madhukar@gmail.com");
         Assert.assertEquals("Tatiraju", contact.getLastName());
+        Assert.assertEquals("Madhukar",contact.getFirstName());
+        Assert.assertEquals("Vizag",contact.getCity());
+        Assert.assertEquals("AP",contact.getState());
     }
 
 
