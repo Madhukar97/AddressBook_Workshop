@@ -1,8 +1,10 @@
+package com.bridgelabz;
+
 import java.util.ArrayList;
 
 public class AddressBook {
 
-    ArrayList<Contact> contactArrayList = new ArrayList<Contact>();
+    ArrayList<Contact> contactArrayList = new ArrayList<>();
 
     public static void main(String[] args) {
 
