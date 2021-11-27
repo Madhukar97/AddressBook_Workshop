@@ -5,18 +5,13 @@ public class AddressBookTest {
 
     @Test
     public void whenGivenContactDetailsShouldAbleToGetTheDetails() {
-        Contact contact = new Contact("Madhukar",
-                "Tatiraju",
-                "Dr.No.50-50-2,seethammadhara",
-                "Vizag",
-                "AP",
-                "530013",
-                "93456482012",
-                "madhukar@gmail.com");
-        Assert.assertEquals("Tatiraju", contact.getLastName());
-        Assert.assertEquals("Madhukar",contact.getFirstName());
-        Assert.assertEquals("Vizag",contact.getCity());
-        Assert.assertEquals("AP",contact.getState());
+        AddressBook addressBook = new AddressBook();
+        addressBook.createContact();
+        Assert.assertEquals("Tatiraju", addressBook.createContact().getLastName());
+        Assert.assertEquals("Madhukar", addressBook.createContact().getFirstName());
+        Assert.assertEquals("Vizag", addressBook.createContact().getCity());
+        Assert.assertEquals("AP", addressBook.createContact().getState());
+        Assert.assertNotEquals("Bangalore", addressBook.createContact().getCity());
     }
 
 
